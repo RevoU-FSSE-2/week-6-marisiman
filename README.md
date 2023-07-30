@@ -11,28 +11,32 @@ for build ≥ 18362
 If not fulfilled, do a windows update first,
 ![Alt text](/assets/image.png)
 
-2.	Enable WSL on Windows using ```Windows PowerShell```, The steps can be seen on this site [learn.microsoft.com.](https://learn.microsoft.com/id-id/windows/wsl/install-manual)</br><ul>
-a. Add : </br>
-dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart</br>
-<img src="./assets/wsl1.png" height="300rm" align="center">
+2.	Enable WSL on Windows using ```Windows PowerShell```, The steps can be seen on this site [learn.microsoft.com.](https://learn.microsoft.com/id-id/windows/wsl/install-manual)
 </br></br>
+a. Add : </br>
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+</br>
+<img src="./assets/wsl1.png" height="300rm" align="center">
+</br>
 <img src="./assets/wsl2.png" height="300rm" align="center">
 </br></br>
 b.	Add : </br>
-dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart</br>
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+</br>
 <img src="./assets/wsl3.png" height="300rm" align="center">
-</br></br>
+</br>
 <img src="./assets/wsl4.png" height="300rm" align="center">
 </br></br>
 c.	Setelah semua selesai, restart perangkat
-</ul></br>
+</br></br>
 
 3. Install WSL versi 2 : </br>
 download linux kernel update package </br>
 ( https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi )
-<img src="./assets/wsl5.png" height="350rm" align="center">
-</br></br>
-<img src="./assets/wsl6.png" height="350rm" align="center">
+</br>
+<img src="./assets/wsl5.png" height="300rm" align="center">
+</br>
+<img src="./assets/wsl6.png" height="300rm" align="center">
 </br></br>
 
 4.	Open Windows Powershell to make sure it's installed and ubuntu will automatically be installed too. Here's a view from <i><b>Windows PowerShell</b></i></br>
@@ -64,72 +68,105 @@ download linux kernel update package </br>
     iman@DESKTOP-7U0MED7:~$
     ```
 
-6. All terminals WSL and Ubuntu are active
+6. All terminals WSL and Ubuntu are active.
+</br></br>
 
 --
 
 ## USE Docker
 
 ### About Docker
+
 What is Docker and why it is used?
 Docker lets you build, test, and deploy applications quickly
 
 Using Docker, you can quickly deploy and scale applications into any environment and know your code will run. Running Docker on AWS provides developers and admins a highly reliable, low-cost way to build, ship, and run distributed applications at any scale.
 
 ### Docker Image
+
 A Docker image is a file used to execute code in a Docker container. Docker images act as a set of instructions to build a Docker container, like a template. Docker images also act as the starting point when using Docker. An image is comparable to a snapshot in virtual machine (VM) environments.
 
 ### Docker Container 
+
 A container is an isolated environment for your code. This means that a container has no knowledge of your operating system, or your files. It runs on the environment provided to you by Docker Desktop. This is why a container usually has everything that your code needs in order to run, down to a base operating system.
 
 ### Docker Installation
+
 1. Download [Docker](https://https://www.docker.com/).
-<img src="./assets/docker1.png" height="250rm" align="center">
-
-2. Double click on __Docker Desktop Installer.exe__ to install the application. 
-<img src="./assets/docker2.png" height="rm" align="center">
-
-3. Check list two choice and click __Ok__ to install the application. If finish, can click __Close and restart__ to Restart your PC to complete the installation process..</br>
-<img src="./assets/docker3.png" height="300rm" align="center">
-</br></br>
-<img src="./assets/docker4.png" height="300rm" align="center">
-</br></br>
-<img src="./assets/docker5.png" height="303rm" align="center">
 </br>
-4. Click __Accept__ and next to continue the register.
-<img src="./assets/docker6.png" height="rm" align="center">
+<img src="./assets/docker1.png" height="rm" align="center">
+</br></br>
 
-5. __Settings__ your general docker. Finish
+2. Double click on __Docker Desktop Installer.exe__ to install the application.
+</br>
+<img src="./assets/docker2.png" height="rm" align="center">
+</br></br>
+
+3. Check list two choice and click __Ok__ to install the application. If finish, can click __Close and restart__ to Restart your PC to complete the installation process..
+</br>
+<img src="./assets/docker3.png" height="250rm" align="center">
+</br>
+<img src="./assets/docker4.png" height="250rm" align="center">
+</br>
+<img src="./assets/docker5.png" height="253rm" align="center">
+</br></br>
+
+4. Click <b>Accept</b> and next to continue the register.
+</br>
+<img src="./assets/docker6.png" height="rm" align="center">
+</br></br>
+
+5. __Settings__ your general docker than Finish.
+</br>
 <img src="./assets/dokcer7.png" height="rm" align="center">
 
-6. Open Windows Powershell and run it as an administrator.
+6. Open <b>Windows Powershell</b> and run it as an administrator.
 
-7. Write ```docker --version``` to check complete the installation the Docker version.
+7. Write <b>``docker --version``</b> to check complete the installation the Docker version.
+</br>
 <img src="./assets/docker8.png" height="345rm" align="center">
+</br></br>
+
 --
 
 ## Visual Code, Windows Subsystem for Linux 2 and Ubuntu Connect/ Remote
 
 1. Open __```Visual Studio```__.
 
-2. Install _```WSL```_ Extension to remote visual code.</br>
+2. Install _```WSL```_ Extension to remote visual code.
+</br>
   <img src="./assets/vsc1.png" height="rm" align="center">
+</br></br>
+
 3. After finish installation, press ctrl+shift+p
-and type new than choice __“WSL:Connect to WSL using Distro”__</br>
+and type new than choice _<b>WSL : Connect to WSL using Distro</b>_
+</br>
   <img src="./assets/vsc2.png" height="rm" align="center">
-4. Then press _```Ubuntu```_.</br>
+
+4. Then press _```Ubuntu```_.
+</br>
   <img src="./assets/vsc3.png" height="rm" align="center">
+
 5. Wait the process and then will notification in remote operation.
-  <img src="./assets/vsc4.png" height="rm" align="center"></br></br>
-  <img src="./assets/vsc5.png" height="rm" align="center">
+</br>
+  <img src="./assets/vsc4.png" height="50rm" align="center">
+  </br></br>
+  <img src="./assets/vsc5.png" height="50rm" align="center">
+
+</br>
 
 --
 
-## Steps to make a node.js until run it using a Docker container.
+## Steps to make a node.js until run it using a Docker container
+
 
 1. Open VSCode, clone the repository from GitHub to your local storage, open the folder, and create a new file named ```app.js```.
-2. Copy the simple node.js project from github [https://gist.github.com/berdoezt/e51718982926f0caa3fcd8ed45111430](https://gist.github.com/berdoezt/e51718982926f0caa3fcd8ed45111430) and paste it into your VSCode ```app.js```.
-3. Create a new file named package.json that contains some information about the project.
+
+2. Copy the simple node.js project from github </br>
+[https://gist.github.com/berdoezt/e51718982926f0caa3fcd8ed45111430](https://gist.github.com/berdoezt/e51718982926f0caa3fcd8ed45111430) 
+</br>and paste it into your VSCode ```app.js```.
+
+3. Create a new file named package.json that contains some information about the project.</br>
    ```
    {
     "name": "docker_web_app",
@@ -154,6 +191,7 @@ and type new than choice __“WSL:Connect to WSL using Distro”__</br>
    * ```EXPOSE``` : ports where the container will listen.
    * ```CMD``` : commands to run the container.</ul>
    </br>
+
     ```
     FROM node:current-alpine
 
@@ -167,10 +205,11 @@ and type new than choice __“WSL:Connect to WSL using Distro”__</br>
 
     CMD ["node", "app.js"]
     ```
-5. Try to check your folder _```WEEK-6-MARISIMAN```_ in terminal.
-![Check new folde](/assets/cek1.png)
+5. Try to check your folder _```WEEK-6-MARISIMAN```_ in terminal.</br>
+![Check new folder](/assets/cek1.png)
 
-6. After creating the dockerfile, we are going to build the project using ```WindowsPowerShell```. Check list images in your file before you build the new image with command : ```docker images```
+6. After creating the dockerfile, we are going to build the project using ```WindowsPowerShell```. Check list images in your file before you build the new image with command : ```docker images```.
+</br>
 ![before build image](/assets/beforebuild.png)
 </br></br>
 And the next step for build that,
@@ -181,29 +220,39 @@ Open your ``WindowsPowerShell`` and use the command:
    * `.` : specify the current directory to build Docker image.
    * `-t` : tag to your image to easily find it.
    * `docker_web_app` : name of the Docker image.
-   </br></br>
-   ![build image](/assets/build.png)
-   </br></br>
+  </br></br>
+
+    <img src="./assets/build.png" height="400rm" align="center">
+
+   </br>
+
    * Can you check again your images list,
-     <img src="./assets/afterbuild.png" height="70rm" align="center">
-   </br></br>
+  </br></br>
+
+    <img src="./assets/afterbuild.png" height="70rm" align="center">
+
+   </br>
+
 7. After build the image, run the image using ``WindowsPowerShell`` with the command : ```docker run -p 3001:3001 docker_web_app:latest```.
 
    * ```docker run``` : to run the image.
    * ```-p 3001:3001``` : redirect local port to private port inside the container.
    * ```docker_web_app``` : name of the image.
    * ```:latest``` : refer the latest version of the image.
-   </br></br>
-   <img src="./assets/run.png" height="40rm" align="center">
-</br></br>
+   </br>
+
+   <img src="./assets/run.png" height="40rm" align="center"> </br>
+
 8. When it is already running, can write command ```docker ps``` to check the container will appear in Docker Desktop.
 </br>
 <img src="./assets/cekrunafterbuild.png" height="120rm" align="center">
 
-9. Try to check your image in web with the adress ```localhost:3001```, and finish.
+
+9. Try to check your image in web with the adress ```localhost:3001```, and finish.</br>
 ![result loclahost](/assets/localhost.png)
 
 ---
-<i>`copyright by Iman`</i>
+Thanks for your support</br></br>
+<i>`copyright 2023 by Iman`</i>
 
 
