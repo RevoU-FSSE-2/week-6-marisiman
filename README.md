@@ -119,12 +119,13 @@ A container is an isolated environment for your code. This means that a containe
 5. __Settings__ your general docker than Finish.
 </br>
 <img src="./assets/dokcer7.png" height="rm" align="center">
+</br></br>
 
 6. Open <b>Windows Powershell</b> and run it as an administrator.
 
 7. Write <b>``docker --version``</b> to check complete the installation the Docker version.
 </br>
-<img src="./assets/docker8.png" height="345rm" align="center">
+<img src="./assets/docker8.png" height="rm" align="center">
 </br></br>
 
 --
