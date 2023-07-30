@@ -5,39 +5,35 @@
 --
 ## USE Windows Subsystem for Linux 2 and Ubuntu
 
-1.	Pastikan spesifikasi windows terpenuhi :</br>
-Untuk version ≥ 1903
-Untuk build ≥ 18362
-Jika tidak terpenuhi lakukan update windows terlebih dahulu
+1.	Make sure windows specifications are met :</br>
+for version ≥ 1903
+for build ≥ 18362
+If not fulfilled, do a windows update first,
 ![Alt text](/assets/image.png)
 
-2.	Enable WSL di Windows menggunakan windows powershell, langkah2nya dapat dilihat di situs ini [learn.microsoft.com.](https://learn.microsoft.com/id-id/windows/wsl/install-manual)</br>
-a. Tambahkan : </br>
+2.	Enable WSL on Windows using ```Windows PowerShell```, The steps can be seen on this site [learn.microsoft.com.](https://learn.microsoft.com/id-id/windows/wsl/install-manual)</br>
+a. Add : </br>
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart</br>
-<img src="./assets/wsl1.png" height="170rm" align="left">
-<img src="./assets/wsl2.png" height="170rm" align="right">
+<img src="./assets/wsl1.png" height="300rm" align="center">
 </br></br>
-</br></br></br>
-</br></br></br>
-b.	Tambahkan : </br>
+<img src="./assets/wsl2.png" height="300rm" align="center">
+</br></br>
+b.	Add : </br>
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart</br>
-<img src="./assets/wsl3.png" height="170rm" align="left">
-<img src="./assets/wsl4.png" height="170rm" align="right">
+<img src="./assets/wsl3.png" height="300rm" align="center">
 </br></br>
-</br></br></br>
-</br></br></br>
+<img src="./assets/wsl4.png" height="300rm" align="center">
+</br></br>
 c.	Setelah semua selesai, restart perangkat
 
 3. Install WSL versi 2 : </br>
 download linux kernel update package </br>
 ( https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi )
-<img src="./assets/wsl5.png" height="230rm" align="left">
-<img src="./assets/wsl6.png" height="230rm" align="right">
-</br></br></br></br>
-</br></br></br>
-</br></br></br>
+<img src="./assets/wsl5.png" height="350rm" align="center">
 </br></br>
-4.	Buka Windows Powershell untuk memastikan sudah terinstall dan ubuntu akan otomatis ikut terinstall juga. Berikut tampilan dari <i><b>Windows PowerShell</b></i></br></br>
+<img src="./assets/wsl6.png" height="350rm" align="center">
+</br></br>
+4.	Open Windows Powershell to make sure it's installed and ubuntu will automatically be installed too. Here's a view from <i><b>Windows PowerShell</b></i></br>
     ```
     PS C:\WINDOWS\system32> wsl.exe --install
     Installing: Ubuntu
@@ -53,7 +49,7 @@ download linux kernel update package </br>
     Installation successful!
     ```
 
-5. Buka terminal ubuntu cek apakah sudah aktif</br>
+5. Open the ubuntu terminal check if it is active</br>
     ```
     iman@DESKTOP-7U0MED7:~$ whoami 
     iman
@@ -65,7 +61,7 @@ download linux kernel update package </br>
     iman@DESKTOP-7U0MED7:~$
     ```
 
-6. Sudah aktif semua WSL dan Ubuntu
+6. All terminals WSL and Ubuntu are active
 
 --
 
@@ -85,42 +81,44 @@ A container is an isolated environment for your code. This means that a containe
 
 ### Docker Installation
 1. Download [Docker](https://https://www.docker.com/).
-<img src="./assets/docker1.png" height="230rm" align="center">
+<img src="./assets/docker1.png" height="250rm" align="center">
 
 2. Double click on __Docker Desktop Installer.exe__ to install the application. 
-<img src="./assets/docker2.png" height="40rm" align="center">
+<img src="./assets/docker2.png" height="rm" align="center">
 
 3. Check list two choice and click __Ok__ to install the application. If finish, can click __Close and restart__ to Restart your PC to complete the installation process..</br>
-<img src="./assets/docker3.png" height="140rm" align="center">
-<img src="./assets/docker4.png" height="135rm" align="center">
-<img src="./assets/docker5.png" height="145rm" align="center">
-
+<img src="./assets/docker3.png" height="300rm" align="center">
+</br></br>
+<img src="./assets/docker4.png" height="300rm" align="center">
+</br></br>
+<img src="./assets/docker5.png" height="303rm" align="center">
+</br>
 4. Click __Accept__ and next to continue the register.
-<img src="./assets/docker6.png" height="380rm" align="center">
+<img src="./assets/docker6.png" height="rm" align="center">
 
 5. __Settings__ your general docker. Finish
-<img src="./assets/dokcer7.png" height="345rm" align="center">
+<img src="./assets/dokcer7.png" height="rm" align="center">
 
 6. Open Windows Powershell and run it as an administrator.
 
-7. Write `docker --version` to check complete the installation the Docker version.
+7. Write ```docker --version``` to check complete the installation the Docker version.
 <img src="./assets/docker8.png" height="345rm" align="center">
 --
 
 ## Visual Code, Windows Subsystem for Linux 2 and Ubuntu Connect/ Remote
 
-1. Open __Visual Studio__.
+1. Open __```Visual Studio```__.
 
-2. Install __WSL__ Extension to remote visual code.</br>
-  <img src="./assets/vsc1.png" height="450rm" align="center">
+2. Install _```WSL```_ Extension to remote visual code.</br>
+  <img src="./assets/vsc1.png" height="rm" align="center">
 3. After finish installation, press ctrl+shift+p
 and type new than choice __“WSL:Connect to WSL using Distro”__</br>
-  <img src="./assets/vsc2.png" height="325rm" align="center">
-4. Then press __“Ubuntu”__.</br>
-  <img src="./assets/vsc3.png" height="95rm" align="center">
+  <img src="./assets/vsc2.png" height="rm" align="center">
+4. Then press _```Ubuntu```_.</br>
+  <img src="./assets/vsc3.png" height="rm" align="center">
 5. Wait the process and then will notification in remote operation.
-  <img src="./assets/vsc4.png" height="40rm" align="center"></br></br>
-  <img src="./assets/vsc5.png" height="40rm" align="center">
+  <img src="./assets/vsc4.png" height="rm" align="center"></br></br>
+  <img src="./assets/vsc5.png" height="rm" align="center">
 
 --
 
@@ -152,6 +150,7 @@ and type new than choice __“WSL:Connect to WSL using Distro”__</br>
    * ```RUN``` : execute commands to build image.
    * ```EXPOSE``` : ports where the container will listen.
    * ```CMD``` : commands to run the container.</ul>
+   </br>
     ```
     FROM node:current-alpine
 
@@ -165,32 +164,39 @@ and type new than choice __“WSL:Connect to WSL using Distro”__</br>
 
     CMD ["node", "app.js"]
     ```
-5. Try to check your folder ```WEEK-6-MARISIMAN``` in terminal
+5. Try to check your folder _```WEEK-6-MARISIMAN```_ in terminal.
 ![Check new folde](/assets/cek1.png)
 
-6. After creating the dockerfile, we are going to build the project using ``WindowsPowerShell``. Check list images in your file before you build the new image with command : ```docker images```
+6. After creating the dockerfile, we are going to build the project using ```WindowsPowerShell```. Check list images in your file before you build the new image with command : ```docker images```
 ![before build image](/assets/beforebuild.png)
 </br></br>
 And the next step for build that,
 Open your ``WindowsPowerShell`` and use the command: 
   ```docker build. -t docker_web_app```.
+
    * `docker build` : name image to build an image using Docker.
    * `.` : specify the current directory to build Docker image.
    * `-t` : tag to your image to easily find it.
    * `docker_web_app` : name of the Docker image.
+   </br></br>
    ![build image](/assets/build.png)
-   </br>
+   </br></br>
    * Can you check again your images list,
-   ![check after build](/assets/afterbuild.png)
-
+     <img src="./assets/afterbuild.png" height="70rm" align="center">
+   </br></br>
 7. After build the image, run the image using ``WindowsPowerShell`` with the command : ```docker run -p 3001:3001 docker_web_app:latest```.
+
    * ```docker run``` : to run the image.
    * ```-p 3001:3001``` : redirect local port to private port inside the container.
    * ```docker_web_app``` : name of the image.
    * ```:latest``` : refer the latest version of the image.
-    ![Run Docker image](/assets/run.png)
+   </br></br>
+   <img src="./assets/run.png" height="40rm" align="center">
+</br></br>
 8. When it is already running, can write command ```docker ps``` to check the container will appear in Docker Desktop.
-   ![check docekr container](/assets/cekrunafterbuild.png)
+</br>
+<img src="./assets/cekrunafterbuild.png" height="120rm" align="center">
+
 9. Try to check your image in web with the adress ```localhost:3001```, and finish.
 ![result loclahost](/assets/localhost.png)
 
