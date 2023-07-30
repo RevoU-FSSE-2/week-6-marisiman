@@ -253,7 +253,7 @@ Open your ``WindowsPowerShell`` and use the command:
    <img src="./assets/run.png" height="40rm" align="center"> </br>
 
 9. When it is already running, can write command ```docker ps``` to check the container will appear in Docker Desktop.
-   * `display before build new image` 
+   * command ```docker ps``` 
   </br></br>
 
     <img src="./assets/cekrunafterbuild.png" height="120rm" align="center">
