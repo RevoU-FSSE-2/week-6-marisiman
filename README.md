@@ -26,7 +26,7 @@ If not fulfilled, do a windows update first,
           </br>
           <img src="./assets/wsl4.png" height="300rm" align="center">
           </br></br>
-          c.	Setelah semua selesai, restart perangkat
+          c.	After all is done, restart the device.
           </br></br>
 
 
