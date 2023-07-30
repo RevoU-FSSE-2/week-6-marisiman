@@ -11,7 +11,7 @@ for build ≥ 18362
 If not fulfilled, do a windows update first,
 ![Alt text](/assets/image.png)
 
-2.	Enable WSL on Windows using ```Windows PowerShell```, The steps can be seen on this site [learn.microsoft.com.](https://learn.microsoft.com/id-id/windows/wsl/install-manual)</br> 
+2.	Enable WSL on Windows using ```Windows PowerShell```, The steps can be seen on this site [learn.microsoft.com.](https://learn.microsoft.com/id-id/windows/wsl/install-manual)</br></br>
           a. Add : </br>
           dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
           </br>
@@ -143,18 +143,19 @@ A container is an isolated environment for your code. This means that a containe
 and type new than choice _<b>WSL : Connect to WSL using Distro</b>_
 </br>
   <img src="./assets/vsc2.png" height="rm" align="center">
-
+</br>
 4. Then press _```Ubuntu```_.
 </br>
   <img src="./assets/vsc3.png" height="rm" align="center">
-
+</br>
 5. Wait the process and then will notification in remote operation.
 </br>
   <img src="./assets/vsc4.png" height="50rm" align="center">
   </br></br>
   <img src="./assets/vsc5.png" height="50rm" align="center">
 
-</br>
+</br></br>
+
 
 --
 
@@ -206,14 +207,21 @@ and type new than choice _<b>WSL : Connect to WSL using Distro</b>_
 
     CMD ["node", "app.js"]
     ```
-5. Try to check your folder _```WEEK-6-MARISIMAN```_ in terminal.</br>
-![Check new folder](/assets/cek1.png)
+5. Try to check your folder _```WEEK-6-MARISIMAN```_ in terminal.
+   * `check your files` 
+  </br></br>
+
+    <img src="./assets/cek1.png" height="rm" align="center">
+</br>
 
 6. After creating the dockerfile, we are going to build the project using ```WindowsPowerShell```. Check list images in your file before you build the new image with command : ```docker images```.
+   * `display before build new image` 
+  </br></br>
+
+    <img src="./assets/beforebuild.png" height="rm" align="center">
 </br>
-![before build image](/assets/beforebuild.png)
-</br></br>
-And the next step for build that,
+
+7. And the next step for build that,
 Open your ``WindowsPowerShell`` and use the command: 
   ```docker build. -t docker_web_app```.
 
@@ -234,7 +242,7 @@ Open your ``WindowsPowerShell`` and use the command:
 
    </br>
 
-7. After build the image, run the image using ``WindowsPowerShell`` with the command : ```docker run -p 3001:3001 docker_web_app:latest```.
+8. After build the image, run the image using ``WindowsPowerShell`` with the command : ```docker run -p 3001:3001 docker_web_app:latest```.
 
    * ```docker run``` : to run the image.
    * ```-p 3001:3001``` : redirect local port to private port inside the container.
@@ -244,12 +252,12 @@ Open your ``WindowsPowerShell`` and use the command:
 
    <img src="./assets/run.png" height="40rm" align="center"> </br>
 
-8. When it is already running, can write command ```docker ps``` to check the container will appear in Docker Desktop.
+9. When it is already running, can write command ```docker ps``` to check the container will appear in Docker Desktop.
 </br>
 <img src="./assets/cekrunafterbuild.png" height="120rm" align="center">
 
 
-9. Try to check your image in web with the adress ```localhost:3001```, and finish.</br>
+10. Try to check your image in web with the adress ```localhost:3001```, and finish.</br>
 ![result loclahost](/assets/localhost.png)
 
 ---
