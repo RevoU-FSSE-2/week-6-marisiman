@@ -18,21 +18,21 @@ If not fulfilled, do a windows update first,
           <img src="./assets/wsl1.png" height="300rm" align="center">
           </br>
           <img src="./assets/wsl2.png" height="300rm" align="center">
-          </br>
+          </br></br>
           b.	Add : </br>
           dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
           </br>
           <img src="./assets/wsl3.png" height="300rm" align="center">
           </br>
           <img src="./assets/wsl4.png" height="300rm" align="center">
-          </br>
+          </br></br>
           c.	Setelah semua selesai, restart perangkat
           </br></br>
 
 
 3. Install WSL versi 2 : </br>
 download linux kernel update package </br>
-( https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi )
+[wsl_update_x64.msi](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)
 </br>
 <img src="./assets/wsl5.png" height="300rm" align="center">
 </br>
