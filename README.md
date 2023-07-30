@@ -11,7 +11,7 @@ for build ≥ 18362
 If not fulfilled, do a windows update first,
 ![Alt text](/assets/image.png)
 
-2.	Enable WSL on Windows using ```Windows PowerShell```, The steps can be seen on this site [learn.microsoft.com.](https://learn.microsoft.com/id-id/windows/wsl/install-manual)</br>
+2.	Enable WSL on Windows using ```Windows PowerShell```, The steps can be seen on this site [learn.microsoft.com.](https://learn.microsoft.com/id-id/windows/wsl/install-manual)</br><ul>
 a. Add : </br>
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart</br>
 <img src="./assets/wsl1.png" height="300rm" align="center">
@@ -25,6 +25,7 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 <img src="./assets/wsl4.png" height="300rm" align="center">
 </br></br>
 c.	Setelah semua selesai, restart perangkat
+</ul></br>
 
 3. Install WSL versi 2 : </br>
 download linux kernel update package </br>
@@ -33,7 +34,9 @@ download linux kernel update package </br>
 </br></br>
 <img src="./assets/wsl6.png" height="350rm" align="center">
 </br></br>
+
 4.	Open Windows Powershell to make sure it's installed and ubuntu will automatically be installed too. Here's a view from <i><b>Windows PowerShell</b></i></br>
+
     ```
     PS C:\WINDOWS\system32> wsl.exe --install
     Installing: Ubuntu
