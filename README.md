@@ -233,14 +233,14 @@ Open your ``WindowsPowerShell`` and use the command:
 
     <img src="./assets/build.png" height="400rm" align="center">
 
-   </br>
+   </br></br>
 
    * Can you check again your images list,
   </br></br>
 
     <img src="./assets/afterbuild.png" height="70rm" align="center">
 
-   </br>
+   </br></br>
 
 8. After build the image, run the image using ``WindowsPowerShell`` with the command : ```docker run -p 3001:3001 docker_web_app:latest```.
 
@@ -253,8 +253,11 @@ Open your ``WindowsPowerShell`` and use the command:
    <img src="./assets/run.png" height="40rm" align="center"> </br>
 
 9. When it is already running, can write command ```docker ps``` to check the container will appear in Docker Desktop.
+   * `display before build new image` 
+  </br></br>
+
+    <img src="./assets/cekrunafterbuild.png" height="120rm" align="center">
 </br>
-<img src="./assets/cekrunafterbuild.png" height="120rm" align="center">
 
 
 10. Try to check your image in web with the adress ```localhost:3001```, and finish.</br>
