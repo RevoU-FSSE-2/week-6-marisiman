@@ -12,23 +12,21 @@ If not fulfilled, do a windows update first,
 ![Alt text](/assets/image.png)
 
 2.	Enable WSL on Windows using ```Windows PowerShell```, The steps can be seen on this site [learn.microsoft.com.](https://learn.microsoft.com/id-id/windows/wsl/install-manual)
-</br></br>
+</br>
 a. Add : </br>
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
-</br>
 <img src="./assets/wsl1.png" height="300rm" align="center">
 </br>
 <img src="./assets/wsl2.png" height="300rm" align="center">
-</br></br>
-b.	Add : </br>
+</br>b.	Add : </br>
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 </br>
 <img src="./assets/wsl3.png" height="300rm" align="center">
 </br>
 <img src="./assets/wsl4.png" height="300rm" align="center">
+</br>c.	Setelah semua selesai, restart perangkat
 </br></br>
-c.	Setelah semua selesai, restart perangkat
-</br></br>
+
 
 3. Install WSL versi 2 : </br>
 download linux kernel update package </br>
